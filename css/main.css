@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {text-decoration: none;}
+
+/* style header */
+header {
+    background-image: url(../images/Hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+header nav a {
+    color: #243363;
+    font-size: 20px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+#header-icons {
+    margin-top: 30px;
+}
+#header-icons a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#logo-header {
+    margin-top: 20px;
+    margin-left: -100px;
+}
+
+#drink-now{
+    grid-row: 3;
+}
+#drink-now button {
+    width: 122px;
+    height: 51px;
+    background-color: #243363;
+    color: white;
+    border: none;
+}
+
+#header-des {
+    color: #243363;
+    font-size: 73px;
+}
+
+/* flavours */
+
+/* tablet-size */
+/* mobile */
+@media screen and (max-width: 768px){
+    #drink-now, #header-icons, #main-nav {
+        display: none;
+    }
+    #logo-header{display: contents;}
+
+    #logo-header img {
+        width: 30px;
+        height: 45px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    #buger_menu-mobile {
+        grid-row: 1;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    header {
+        background-image: url(../images/Hero-img-bg-mobile.png);
+        background-repeat: none;
+        background-size: contain;
+    }
+    #header-des {
+        font-size: 35px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -30px;
+    }
+    /* style flavour */
+
+    #flavour h2, p {
+        color: #243363;
+        text-align: center;
+    }
+}
